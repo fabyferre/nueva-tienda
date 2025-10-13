@@ -1,0 +1,56 @@
+:root {
+    --primary-color: #f7a000;
+    --secondary-color: #212529;
+    --text-light: #ffffff;
+    --font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.nav-container {
+    background-color: var(--secondary-color);
+    padding: 15px 30px; 
+    display: flex;
+    align-items: center; 
+    gap: 30px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    font-family: var(--font-family);
+}
+
+/* ESTILOS DEL CONTENEDOR DEL LOGO (EL ENLACE) */
+.logo-link {
+    margin-right: auto; 
+    display: flex; 
+    align-items: center; 
+    padding: 0; 
+}
+
+/* ESTILOS DE LA IMAGEN PNG DEL LOGO */
+.logo-img {
+    border-radius: 50px;
+    height: 40px; 
+    width: auto; 
+    max-width: 180px; 
+    transition: transform 0.3s ease; 
+}
+
+/* EFECTO HOVER PARA LA IMAGEN DEL LOGO (opcional) */
+.logo-img:hover {
+    transform: scale(1.05); 
+    opacity: 0.9; 
+}
+
+/* ESTILOS DE LOS ENLACES DE NAVEGACIÓN (a-nav) */
+.a-nav {
+    color: var(--text-light); 
+    text-decoration: none; 
+    font-size: 1rem;
+    padding: 8px 12px; 
+    transition: all 0.3s ease; 
+    border-radius: 4px;
+}
+
+.a-nav:hover {
+    color: var(--secondary-color); 
+    background-color: var(--primary-color); 
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
