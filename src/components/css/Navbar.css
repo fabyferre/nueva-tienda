@@ -7,7 +7,7 @@
 
 .nav-container {
     background-color: var(--secondary-color);
-    padding: 15px 30px; 
+    padding: 15px 30px ; 
     display: flex;
     align-items: center; 
     gap: 30px; 

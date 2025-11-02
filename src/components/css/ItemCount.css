@@ -1,0 +1,66 @@
+/* Contenedor principal del contador */
+.counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para el número del contador (count) */
+.count {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin: 0 15px;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* Estilos base para los botones de resta y suma */
+.counter-container button {
+    background-color: var(--primary-color, #007bff);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo específico para el botón de resta (izquierda) */
+.btnresta {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Estilo específico para el botón de suma (derecha) */
+.btnsumar {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 0;
+    
+}
+
+/* Efecto hover para ambos botones */
+.counter-container button:hover {
+    background-color: var(--hover-color, #0056b3);
+}
+
+/* Efecto activo (al hacer clic) */
+.counter-container button:active {
+    transform: translateY(1px);
+}

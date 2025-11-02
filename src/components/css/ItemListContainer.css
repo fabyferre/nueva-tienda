@@ -1,0 +1,57 @@
+
+/* Aplicar tipografía y fondo general */
+
+   
+body {
+    font-family: var(--font-family-sans);
+    background-color:cornsilk; 
+    
+     
+}
+    
+h1 {
+    background-color: var(--primary-color); 
+    color: var(--text-light); 
+    font-family: var(--font-family-sans);
+    padding: 15px 30px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; 
+    margin: 0 0 20px 0; 
+    width: 100%; 
+}
+
+.button-contai {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px; 
+    margin-bottom: 15px;
+}
+
+/* Estilo del Botón Error */
+.button-error {
+    text-decoration: none ;
+    background-color:  #f7a000;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+     
+}
+
+.button-error:hover {
+    background-color: #e59000; 
+}
+
+.button-error:active {
+    transform: scale(0.98); 
+}

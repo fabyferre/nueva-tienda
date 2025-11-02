@@ -1,0 +1,119 @@
+/* Variables de color y tipografía */
+:root {
+    --primary-color: #f7a000;          
+    --secondary-color: #333;           
+    --background-card: #ffffff;        
+    --text-light: #ffffff;             
+    --font-family-sans: 'Montserrat', 'Helvetica Neue', Arial, sans-serif; 
+    --shadow-modern: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --border-radius-card: 10px;        
+}
+
+
+
+/* Estilos del Grid de Productos: Implementación de 3 columnas */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px; 
+    padding: 5%;
+}
+
+
+/* Estilos de la Tarjeta de Producto */
+
+.product-card {
+    background-color: var(--background-card);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--shadow-modern);
+    text-align: center; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+    width: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
+}
+
+/* Estilos de la Imagen del Producto */
+.product-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    border-bottom: 2px solid black;
+    
+}
+
+/* Contenido de la Tarjeta  */
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    height: 100%; 
+}
+
+
+/* Nombre del Producto */
+.product-name {
+    font-size: 1.5em;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+/* Contenedor del Valor/Precio */
+.product-value {
+   
+    margin: 5px 0; 
+}
+
+/* Precio del Producto  */
+.product-price {
+    font-size: 1.8em;
+    font-weight: 800;
+    color: rgb(65, 57, 57); 
+    margin: 0;
+}
+
+/* Descripción del Producto */
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+/* Contenedor del Botón */
+.button-container {
+    margin-top: 15px; /
+}
+
+/* Estilo del Botón  */
+.add-to-cart-button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 100%; 
+    text-decoration: none;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e59000; 
+}
+
+.add-to-cart-button:active {
+    transform: scale(0.98); 
+}
+
