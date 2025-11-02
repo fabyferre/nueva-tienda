@@ -10,6 +10,9 @@ const Error = () => {
         <div className='button-contai'>
         <Link className='button-error' to='/'>Volver a HOME</Link>
         </div>
+        <div className="red-img">
+          <img src="../problemas-de-red.jpg" alt="problemas con la red"/>
+        </div>
 </div>
   )
 }
