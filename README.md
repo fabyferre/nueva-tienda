@@ -1,16 +1,80 @@
-# React + Vite
+Tienda Online de Productos de Mate: La Ronda Mate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+☕ Descripción del Proyecto
 
-Currently, two official plugins are available:
+Este proyecto es una aplicación web de comercio electrónico (E-commerce) moderna, diseñada para la venta y exhibición de productos relacionados con la cultura del mate, como mates, bombillas y accesorios.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación cuenta con una interfaz de usuario limpia y responsiva que permite a los clientes navegar por el catálogo de productos (como se ve en la sección "Nuevos", "Ofertas" y "Más vendidos"), visualizar detalles de los artículos, y gestionar su carrito de compras de manera intuitiva.
 
-## React Compiler
+La arquitectura de la aplicación está construida con React, asegurando una experiencia de usuario rápida y dinámica, y utiliza Firebase para la gestión de datos persistentes y la autenticación.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![Vista Previa de la Aplicación](foto app.jpg)
 
-## Expanding the ESLint configuration
+🛠️ Herramientas Utilizadas (Stack Tecnológico)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+El proyecto está desarrollado utilizando las siguientes tecnologías y librerías clave, como se detalla en el archivo package.json:
+
+Frontend
+
+React 19: La biblioteca principal para construir la interfaz de usuario.
+
+Vite: Herramienta de construcción rápida para el desarrollo.
+
+React Router DOM v6: Para la navegación y el enrutamiento dentro de la aplicación.
+
+Bootstrap / React-Bootstrap: Framework de CSS y componentes para un diseño responsivo y estilizado.
+
+React-Icons: Librería de iconos vectoriales para mejorar la interfaz.
+
+React Hook Form: Para la gestión de formularios con validación eficiente.
+
+SweetAlert2: Para notificaciones y alertas interactivas y estéticas.
+
+Backend/Servicios
+
+Firebase: Utilizado como backend-as-a-service (BaaS) para:
+
+Base de datos (probablemente Firestore).
+
+Autenticación.
+
+🚀 Comandos para Ejecutar la Aplicación
+
+Para poner en marcha el proyecto en tu entorno local, sigue los siguientes pasos.
+
+1. Prerrequisitos
+
+Asegúrate de tener instalado Node.js y npm (Node Package Manager) o Yarn.
+
+2. Instalación de Dependencias
+
+Abre la terminal en la carpeta raíz del proyecto y ejecuta el siguiente comando:
+
+npm install
+# o si usas yarn
+# yarn install
+
+
+3. Ejecutar en Modo Desarrollo
+
+Para iniciar la aplicación en modo desarrollo con recarga en caliente (Hot Module Replacement), utiliza el comando dev:
+
+npm run dev
+
+
+La aplicación estará disponible en http://localhost:5173 (o el puerto que indique Vite).
+
+4. Construir para Producción
+
+Para generar una versión optimizada y lista para desplegar de la aplicación, utiliza el comando build:
+
+npm run build
+
+
+Esto creará los archivos estáticos optimizados en el directorio dist/.
+
+5. Previsualizar la Construcción (Opcional)
+
+Puedes previsualizar los archivos de producción localmente con el comando preview:
+
+npm run preview
