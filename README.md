@@ -71,7 +71,7 @@ npm run dev
 La aplicación estará disponible en:
 
 ```
-http://localhost:5173
+[Visita mi página](https://nueva-tienda-bf91.vercel.app/)
 ```
 
 ---
