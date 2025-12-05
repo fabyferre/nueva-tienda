@@ -70,9 +70,9 @@ npm run dev
 
 La aplicación estará disponible en:
 
-```
+
 [Visita mi página](https://nueva-tienda-bf91.vercel.app/)
-```
+
 
 ---
 
