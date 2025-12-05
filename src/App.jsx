@@ -5,7 +5,7 @@ import ItemListContainer from './components/ItemListContainer'
 import Navbar from './components/Navbar'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Error from './components/Error'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 import { CartProvider } from './context/CartContext'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CartContainer from './components/CartContainer';
