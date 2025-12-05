@@ -1,80 +1,100 @@
-Tienda Online de Productos de Mate: La Ronda Mate
 
-☕ Descripción del Proyecto
+# 🛒 Tienda Online de Productos de Mate: **La Ronda Mate**
+
+## ☕ Descripción del Proyecto
 
 Este proyecto es una aplicación web de comercio electrónico (E-commerce) moderna, diseñada para la venta y exhibición de productos relacionados con la cultura del mate, como mates, bombillas y accesorios.
 
-La aplicación cuenta con una interfaz de usuario limpia y responsiva que permite a los clientes navegar por el catálogo de productos (como se ve en la sección "Nuevos", "Ofertas" y "Más vendidos"), visualizar detalles de los artículos, y gestionar su carrito de compras de manera intuitiva.
+La aplicación cuenta con una interfaz de usuario limpia y responsiva que permite a los clientes navegar por el catálogo de productos (como se ve en la sección **"Nuevos"**, **"Ofertas"** y **"Más vendidos"**), visualizar detalles de los artículos y gestionar su carrito de compras de manera intuitiva.
 
-La arquitectura de la aplicación está construida con React, asegurando una experiencia de usuario rápida y dinámica, y utiliza Firebase para la gestión de datos persistentes y la autenticación.
+La arquitectura de la aplicación está construida con **React**, asegurando una experiencia de usuario rápida y dinámica, y utiliza **Firebase** para la gestión de datos persistentes y la autenticación.
 
-![Vista Previa de la Aplicación](foto app.jpg)
+![Vista Previa de la App](./public/foto-app.png)
 
-🛠️ Herramientas Utilizadas (Stack Tecnológico)
+---
 
-El proyecto está desarrollado utilizando las siguientes tecnologías y librerías clave, como se detalla en el archivo package.json:
+## 🛠️ Herramientas Utilizadas (Stack Tecnológico)
 
-Frontend
+El proyecto está desarrollado utilizando las siguientes tecnologías y librerías clave, como se detalla en el archivo `package.json`:
 
-React 19: La biblioteca principal para construir la interfaz de usuario.
+### **Frontend**
 
-Vite: Herramienta de construcción rápida para el desarrollo.
+- **React 19**: Biblioteca principal para construir la interfaz de usuario.  
+- **Vite**: Herramienta de construcción rápida para el desarrollo.  
+- **React Router DOM v6**: Para la navegación y enrutamiento dentro de la aplicación.  
+- **Bootstrap / React-Bootstrap**: Framework CSS para un diseño responsivo y estilizado.  
+- **React-Icons**: Librería de iconos vectoriales.  
+- **React Hook Form**: Para la gestión de formularios con validación eficiente.  
+- **SweetAlert2**: Para notificaciones y alertas interactivas.
 
-React Router DOM v6: Para la navegación y el enrutamiento dentro de la aplicación.
+### **Backend / Servicios**
 
-Bootstrap / React-Bootstrap: Framework de CSS y componentes para un diseño responsivo y estilizado.
+- **Firebase**, utilizado para:
+  - Base de datos *(Firestore)*  
+  - Autenticación  
 
-React-Icons: Librería de iconos vectoriales para mejorar la interfaz.
+---
 
-React Hook Form: Para la gestión de formularios con validación eficiente.
+## 🚀 Comandos para Ejecutar la Aplicación
 
-SweetAlert2: Para notificaciones y alertas interactivas y estéticas.
+Para poner en marcha el proyecto en tu entorno local, sigue los pasos a continuación.
 
-Backend/Servicios
+### **1. Prerrequisitos**
 
-Firebase: Utilizado como backend-as-a-service (BaaS) para:
+Asegúrate de tener instalado:
 
-Base de datos (probablemente Firestore).
+- **Node.js**
+- **npm** o **Yarn**
 
-Autenticación.
+---
 
-🚀 Comandos para Ejecutar la Aplicación
+### **2. Instalación de Dependencias**
 
-Para poner en marcha el proyecto en tu entorno local, sigue los siguientes pasos.
+En la carpeta raíz del proyecto, ejecuta:
 
-1. Prerrequisitos
-
-Asegúrate de tener instalado Node.js y npm (Node Package Manager) o Yarn.
-
-2. Instalación de Dependencias
-
-Abre la terminal en la carpeta raíz del proyecto y ejecuta el siguiente comando:
-
+```bash
 npm install
-# o si usas yarn
+# o si usas Yarn:
 # yarn install
+````
 
+---
 
-3. Ejecutar en Modo Desarrollo
+### **3. Ejecutar en Modo Desarrollo**
 
-Para iniciar la aplicación en modo desarrollo con recarga en caliente (Hot Module Replacement), utiliza el comando dev:
+Inicia el proyecto con recarga en caliente:
 
+```bash
 npm run dev
+```
 
+La aplicación estará disponible en:
 
-La aplicación estará disponible en http://localhost:5173 (o el puerto que indique Vite).
+```
+http://localhost:5173
+```
 
-4. Construir para Producción
+---
 
-Para generar una versión optimizada y lista para desplegar de la aplicación, utiliza el comando build:
+### **4. Construir para Producción**
 
+Genera una versión optimizada del proyecto:
+
+```bash
 npm run build
+```
 
+Esto creará los archivos estáticos optimizados en la carpeta `dist/`.
 
-Esto creará los archivos estáticos optimizados en el directorio dist/.
+---
 
-5. Previsualizar la Construcción (Opcional)
+### **5. Previsualizar la Construcción (Opcional)**
 
-Puedes previsualizar los archivos de producción localmente con el comando preview:
+Para previsualizar la versión de producción localmente:
 
+```bash
 npm run preview
+```
+
+---
+

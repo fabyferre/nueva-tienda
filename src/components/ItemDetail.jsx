@@ -3,10 +3,11 @@ import ItemCount from './ItemCount'
 import { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 
 const ItemDetail = ({ detalle }) => {
-  const { cart, addItem } = useContext(CartContext)
+  const { cart, addItem, itemQuantity } = useContext(CartContext)
 
 
   const [purchase, setPurchase] = useState(false)
@@ -15,9 +16,16 @@ const ItemDetail = ({ detalle }) => {
   const onAdd = (cantidad) => {
     setPurchase(true)
     addItem(detalle, cantidad)
+     Swal.fire({
+      icon:'success',
+      title:`Agregaste  ${detalle.name} al carrito`,
+      showCancelButton:false,
+      showConfirmButton:false,
+      timer:1500
+    })
   }
 
-
+const stockActualizado = detalle.stock - itemQuantity(detalle.id)
   return (
 
     <div className="product-detail-card">
@@ -36,9 +44,9 @@ const ItemDetail = ({ detalle }) => {
       <div>
         <h5>Material: {detalle.material}</h5>
         <h5>Color: {detalle.color}</h5>
-        <p>STOCK DISPONIBLE:{detalle.stock}</p>
+        <p>STOCK DISPONIBLE:{stockActualizado}</p>
       </div>
-      {purchase ? <Link className='btn btn-warning text-white' to='/cart'>Terminar compra</Link> : <ItemCount stock={detalle.stock} onAdd={onAdd}/>}
+      {purchase ? <Link className='btn btn-warning text-white' to='/cart'>Terminar compra</Link> : <ItemCount stock={stockActualizado} onAdd={onAdd}/>}
       <div>
 
       </div>
